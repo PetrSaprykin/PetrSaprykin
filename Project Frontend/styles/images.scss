@@ -1,0 +1,27 @@
+.image__container {
+    max-width: 1100px;
+    border-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    img{
+        margin: 0;
+        width: 100%;
+        max-height: 320px;
+        object-fit: cover;
+        cursor: pointer;
+    }
+    .row{
+        display: flex;
+    }
+    .column{
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+}
+
+@media (max-width:768px) {
+    .row{
+        flex-wrap: wrap;
+    }
+}
